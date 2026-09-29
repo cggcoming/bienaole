@@ -1,0 +1,733 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0892A0B772FF6179B17FAF4B /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E9A4769826B35E331FA8843 /* Notifications.swift */; };
+		156AEAEC1B31755B34A53F42 /* DialPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39138FC7E6843B084E69F7AA /* DialPicker.swift */; };
+		1B0037C21E58434835AEF8AA /* AppIntents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A95C728451AC9D688D0B42FE /* AppIntents.framework */; };
+		2AC35AC8726109AD3430F678 /* WakeBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DCD11F0ECB3D6016BDF1DD /* WakeBrain.swift */; };
+		3061F639145E5BBE2A63798E /* AlarmKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 743F1BA3443D2EB197377791 /* AlarmKit.framework */; };
+		30E36EA13D75359398D9DDA5 /* DawnusLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4ACCE3FDBE134FDB3DE54D /* DawnusLiveActivity.swift */; };
+		323A71E84F502418AC0721E6 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F3DA77BF9A13B9AFC93FC2 /* Theme.swift */; };
+		32B5172E8557040DC5FB4E32 /* WakeSound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC98120BDD590528B4D617A /* WakeSound.swift */; };
+		337CCF2A8C7CDA2B4AC700FF /* StatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C0177600C65EF6071C2E74 /* StatsView.swift */; };
+		348DDC875DF0103053263DF9 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE005FFAC0A6765A5A688240 /* SwiftUI.framework */; };
+		42E456D560A3E75A75D4D96C /* Glass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5169FDD1EC9FEE108ACB2A1 /* Glass.swift */; };
+		486FE05D21031424FAD7365E /* DawnusMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7F439497756FD4396CD0D5 /* DawnusMetadata.swift */; };
+		4D709EE0BA3E3633F430918A /* DawnusMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7F439497756FD4396CD0D5 /* DawnusMetadata.swift */; };
+		524FD4D4E1C0B0BE53D5BFC4 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A438769844246D4D73D35C9 /* RootView.swift */; };
+		59311AEC9931F7F1DCB35247 /* AlarmStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7FE4E554E481E1D2EAE690 /* AlarmStore.swift */; };
+		6D7A62AEA172CA9BD503FD58 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7A610337E90768610EC6BF4 /* WidgetKit.framework */; };
+		6EF0359FB08E2DEF911F6294 /* RitualView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA5B0989379B0F70223E221 /* RitualView.swift */; };
+		71A39CF6B16CD754CEDCD787 /* EngineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D867DCD738C781EA38450CCE /* EngineView.swift */; };
+		7D1E477B28D3F6607870E1A8 /* ActivityKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB23694449C420D550B29F79 /* ActivityKit.framework */; };
+		7DB9E4FC6EFBBA9E99D44EFC /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D60195922257088A08C8FDD9 /* AVFoundation.framework */; };
+		89D477D8A1D91ADE8897785B /* DawnusAlarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525FEDDBEC4C3B601C2FD3C5 /* DawnusAlarm.swift */; };
+		92316E20A77C8783B4D80836 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE005FFAC0A6765A5A688240 /* SwiftUI.framework */; };
+		9516CF86CC1A638D966A92D1 /* AlarmEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C80F4991376B2E732BF78E /* AlarmEditorView.swift */; };
+		95707BE34618742D6C186DA7 /* DawnusWidget.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = FB32A8AFA4F5D046857D7D4C /* DawnusWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		971D40B14D29D3BD5E2CCE82 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AAAC201911DACC797117F42 /* Charts.framework */; };
+		A8D8E7D78091F81406754C9D /* AlarmListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B6BF9D4CDF77374A6A527B /* AlarmListView.swift */; };
+		BBDF0F64B50C2A8B475BDA2D /* DawnusBrainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418F6E67D4FCCE70C7E2B8FA /* DawnusBrainTests.swift */; };
+		C6670B02D64F15B86247242F /* AlarmKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 743F1BA3443D2EB197377791 /* AlarmKit.framework */; };
+		C68D6B859EEC14380F31CC0A /* AppIntents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A95C728451AC9D688D0B42FE /* AppIntents.framework */; };
+		C931B6C6CED92D1662359B90 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7A610337E90768610EC6BF4 /* WidgetKit.framework */; };
+		D7E465409C125DE010ECE0F5 /* RingingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9249A43F8965686F8E40DD81 /* RingingView.swift */; };
+		DD5137C521875C462FDF24F0 /* DawnusIntents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F3788D37F818D5F4EF7AF4 /* DawnusIntents.swift */; };
+		E1B3B902BF26764F50167BE6 /* SharedStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31797C6A3EF9FF9CDD1D67D /* SharedStore.swift */; };
+		EE612BEF1DA4CB5FD68B4C3E /* AlarmEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BAD7B1E082F9B39632B14E /* AlarmEngine.swift */; };
+		F109DF5DED7CF15D0FC400E0 /* DawnusApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300133B71AA6B5F0819FC141 /* DawnusApp.swift */; };
+		FDA1E285D73FD117F7C35A19 /* ActivityKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB23694449C420D550B29F79 /* ActivityKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A493BEBCF8DD88B74C610485 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 21EE58CDA7DC33B1D5D7675E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C6056E099FD5814C0F45BEF0;
+			remoteInfo = Dawnus;
+		};
+		B8E24FF9EE4C58678D789A17 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 21EE58CDA7DC33B1D5D7675E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB2B44BAB8281037309941E7;
+			remoteInfo = DawnusWidget;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E9F97869D0D3279771E5950E /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				95707BE34618742D6C186DA7 /* DawnusWidget.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		06BAD7B1E082F9B39632B14E /* AlarmEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmEngine.swift; sourceTree = "<group>"; };
+		19DB8965E320235B9DBABA63 /* Dawnus.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Dawnus.entitlements; sourceTree = "<group>"; };
+		1A438769844246D4D73D35C9 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		21DCD11F0ECB3D6016BDF1DD /* WakeBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WakeBrain.swift; sourceTree = "<group>"; };
+		2C7FE4E554E481E1D2EAE690 /* AlarmStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmStore.swift; sourceTree = "<group>"; };
+		300133B71AA6B5F0819FC141 /* DawnusApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DawnusApp.swift; sourceTree = "<group>"; };
+		32F3DA77BF9A13B9AFC93FC2 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		39138FC7E6843B084E69F7AA /* DialPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialPicker.swift; sourceTree = "<group>"; };
+		3E9A4769826B35E331FA8843 /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
+		418F6E67D4FCCE70C7E2B8FA /* DawnusBrainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DawnusBrainTests.swift; sourceTree = "<group>"; };
+		525FEDDBEC4C3B601C2FD3C5 /* DawnusAlarm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DawnusAlarm.swift; sourceTree = "<group>"; };
+		52B2D9EBFD80FA0A183A5773 /* DawnusWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DawnusWidget.entitlements; sourceTree = "<group>"; };
+		62F3788D37F818D5F4EF7AF4 /* DawnusIntents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DawnusIntents.swift; sourceTree = "<group>"; };
+		6418103221467F9B59DE3C41 /* DawnusTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = DawnusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		714D8EDBCC8E2E08488CC669 /* Dawnus.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Dawnus.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		743F1BA3443D2EB197377791 /* AlarmKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlarmKit.framework; path = System/Library/Frameworks/AlarmKit.framework; sourceTree = SDKROOT; };
+		8AAAC201911DACC797117F42 /* Charts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Charts.framework; path = System/Library/Frameworks/Charts.framework; sourceTree = SDKROOT; };
+		8FC98120BDD590528B4D617A /* WakeSound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WakeSound.swift; sourceTree = "<group>"; };
+		9249A43F8965686F8E40DD81 /* RingingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingingView.swift; sourceTree = "<group>"; };
+		96FBF7D9786489EF0A10C23D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		A95C728451AC9D688D0B42FE /* AppIntents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppIntents.framework; path = System/Library/Frameworks/AppIntents.framework; sourceTree = SDKROOT; };
+		AB23694449C420D550B29F79 /* ActivityKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ActivityKit.framework; path = System/Library/Frameworks/ActivityKit.framework; sourceTree = SDKROOT; };
+		B0C0177600C65EF6071C2E74 /* StatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsView.swift; sourceTree = "<group>"; };
+		B31797C6A3EF9FF9CDD1D67D /* SharedStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedStore.swift; sourceTree = "<group>"; };
+		B5C80F4991376B2E732BF78E /* AlarmEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmEditorView.swift; sourceTree = "<group>"; };
+		BD4ACCE3FDBE134FDB3DE54D /* DawnusLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DawnusLiveActivity.swift; sourceTree = "<group>"; };
+		C5169FDD1EC9FEE108ACB2A1 /* Glass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Glass.swift; sourceTree = "<group>"; };
+		D60195922257088A08C8FDD9 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		D867DCD738C781EA38450CCE /* EngineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EngineView.swift; sourceTree = "<group>"; };
+		DE005FFAC0A6765A5A688240 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		DF7F439497756FD4396CD0D5 /* DawnusMetadata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DawnusMetadata.swift; sourceTree = "<group>"; };
+		E67DB25A42665C05A6F58695 /* DawnusWidget.withAppGroup.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DawnusWidget.withAppGroup.entitlements; sourceTree = "<group>"; };
+		EDA5B0989379B0F70223E221 /* RitualView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RitualView.swift; sourceTree = "<group>"; };
+		F48F850D5221E6B265747774 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		F49794A5756E0C07C49964C1 /* Dawnus.withAppGroup.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Dawnus.withAppGroup.entitlements; sourceTree = "<group>"; };
+		F7A610337E90768610EC6BF4 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		F9B6BF9D4CDF77374A6A527B /* AlarmListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmListView.swift; sourceTree = "<group>"; };
+		FB32A8AFA4F5D046857D7D4C /* DawnusWidget.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = DawnusWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		140EA7DA82B3909E1F7F260D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3061F639145E5BBE2A63798E /* AlarmKit.framework in Frameworks */,
+				FDA1E285D73FD117F7C35A19 /* ActivityKit.framework in Frameworks */,
+				92316E20A77C8783B4D80836 /* SwiftUI.framework in Frameworks */,
+				6D7A62AEA172CA9BD503FD58 /* WidgetKit.framework in Frameworks */,
+				1B0037C21E58434835AEF8AA /* AppIntents.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20167794D8D42D47353E3D19 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6670B02D64F15B86247242F /* AlarmKit.framework in Frameworks */,
+				7D1E477B28D3F6607870E1A8 /* ActivityKit.framework in Frameworks */,
+				C68D6B859EEC14380F31CC0A /* AppIntents.framework in Frameworks */,
+				348DDC875DF0103053263DF9 /* SwiftUI.framework in Frameworks */,
+				971D40B14D29D3BD5E2CCE82 /* Charts.framework in Frameworks */,
+				C931B6C6CED92D1662359B90 /* WidgetKit.framework in Frameworks */,
+				7DB9E4FC6EFBBA9E99D44EFC /* AVFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		015EB4D5A01631BCD0CFDEF0 /* Dawnus */ = {
+			isa = PBXGroup;
+			children = (
+				19DB8965E320235B9DBABA63 /* Dawnus.entitlements */,
+				F49794A5756E0C07C49964C1 /* Dawnus.withAppGroup.entitlements */,
+				300133B71AA6B5F0819FC141 /* DawnusApp.swift */,
+				4E3D69D8B60FAAEB11AE37CC /* Engine */,
+				F48F850D5221E6B265747774 /* Info.plist */,
+				52339D73ADE2B3AB6FCD6FA9 /* Intents */,
+				1330EF0DD5573FD281F32138 /* Model */,
+				69D4EDB06420C839C5906272 /* Store */,
+				C19565BC0123126BA6589658 /* UI */,
+			);
+			path = Dawnus;
+			sourceTree = "<group>";
+		};
+		1330EF0DD5573FD281F32138 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				525FEDDBEC4C3B601C2FD3C5 /* DawnusAlarm.swift */,
+				DF7F439497756FD4396CD0D5 /* DawnusMetadata.swift */,
+				3E9A4769826B35E331FA8843 /* Notifications.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		46D56A6459546D9FBBF1AA72 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				714D8EDBCC8E2E08488CC669 /* Dawnus.app */,
+				6418103221467F9B59DE3C41 /* DawnusTests.xctest */,
+				FB32A8AFA4F5D046857D7D4C /* DawnusWidget.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4E3D69D8B60FAAEB11AE37CC /* Engine */ = {
+			isa = PBXGroup;
+			children = (
+				06BAD7B1E082F9B39632B14E /* AlarmEngine.swift */,
+				21DCD11F0ECB3D6016BDF1DD /* WakeBrain.swift */,
+				8FC98120BDD590528B4D617A /* WakeSound.swift */,
+			);
+			path = Engine;
+			sourceTree = "<group>";
+		};
+		52339D73ADE2B3AB6FCD6FA9 /* Intents */ = {
+			isa = PBXGroup;
+			children = (
+				62F3788D37F818D5F4EF7AF4 /* DawnusIntents.swift */,
+			);
+			path = Intents;
+			sourceTree = "<group>";
+		};
+		66014B20FF15C1D735828655 /* DawnusTests */ = {
+			isa = PBXGroup;
+			children = (
+				418F6E67D4FCCE70C7E2B8FA /* DawnusBrainTests.swift */,
+			);
+			path = DawnusTests;
+			sourceTree = "<group>";
+		};
+		69D4EDB06420C839C5906272 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				2C7FE4E554E481E1D2EAE690 /* AlarmStore.swift */,
+				B31797C6A3EF9FF9CDD1D67D /* SharedStore.swift */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		AA689018817C7E2BEF52595E /* DawnusWidget */ = {
+			isa = PBXGroup;
+			children = (
+				BD4ACCE3FDBE134FDB3DE54D /* DawnusLiveActivity.swift */,
+				52B2D9EBFD80FA0A183A5773 /* DawnusWidget.entitlements */,
+				E67DB25A42665C05A6F58695 /* DawnusWidget.withAppGroup.entitlements */,
+				96FBF7D9786489EF0A10C23D /* Info.plist */,
+			);
+			path = DawnusWidget;
+			sourceTree = "<group>";
+		};
+		C19565BC0123126BA6589658 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				B5C80F4991376B2E732BF78E /* AlarmEditorView.swift */,
+				F9B6BF9D4CDF77374A6A527B /* AlarmListView.swift */,
+				39138FC7E6843B084E69F7AA /* DialPicker.swift */,
+				D867DCD738C781EA38450CCE /* EngineView.swift */,
+				C5169FDD1EC9FEE108ACB2A1 /* Glass.swift */,
+				9249A43F8965686F8E40DD81 /* RingingView.swift */,
+				EDA5B0989379B0F70223E221 /* RitualView.swift */,
+				1A438769844246D4D73D35C9 /* RootView.swift */,
+				B0C0177600C65EF6071C2E74 /* StatsView.swift */,
+				32F3DA77BF9A13B9AFC93FC2 /* Theme.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		C1E639D21E038AFC496BEDB2 = {
+			isa = PBXGroup;
+			children = (
+				015EB4D5A01631BCD0CFDEF0 /* Dawnus */,
+				66014B20FF15C1D735828655 /* DawnusTests */,
+				AA689018817C7E2BEF52595E /* DawnusWidget */,
+				EA7B0AC07A7B3E5846607959 /* Frameworks */,
+				46D56A6459546D9FBBF1AA72 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EA7B0AC07A7B3E5846607959 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AB23694449C420D550B29F79 /* ActivityKit.framework */,
+				743F1BA3443D2EB197377791 /* AlarmKit.framework */,
+				A95C728451AC9D688D0B42FE /* AppIntents.framework */,
+				D60195922257088A08C8FDD9 /* AVFoundation.framework */,
+				8AAAC201911DACC797117F42 /* Charts.framework */,
+				DE005FFAC0A6765A5A688240 /* SwiftUI.framework */,
+				F7A610337E90768610EC6BF4 /* WidgetKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A2EFE93AEB821C1148647CB1 /* DawnusTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 59FA000C7F7654A6FE2D0309 /* Build configuration list for PBXNativeTarget "DawnusTests" */;
+			buildPhases = (
+				392A50FD2763C812E8311EBB /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F7D47283EE974338924223BB /* PBXTargetDependency */,
+			);
+			name = DawnusTests;
+			packageProductDependencies = (
+			);
+			productName = DawnusTests;
+			productReference = 6418103221467F9B59DE3C41 /* DawnusTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BB2B44BAB8281037309941E7 /* DawnusWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5522A9A4A7CE0730529AF300 /* Build configuration list for PBXNativeTarget "DawnusWidget" */;
+			buildPhases = (
+				6344C9A69C13531AFC82B7FC /* Sources */,
+				140EA7DA82B3909E1F7F260D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DawnusWidget;
+			packageProductDependencies = (
+			);
+			productName = DawnusWidget;
+			productReference = FB32A8AFA4F5D046857D7D4C /* DawnusWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		C6056E099FD5814C0F45BEF0 /* Dawnus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A7D8F0BCCEEC58A77F62A21 /* Build configuration list for PBXNativeTarget "Dawnus" */;
+			buildPhases = (
+				9C1E15D4F57DD60701EF30C8 /* Sources */,
+				20167794D8D42D47353E3D19 /* Frameworks */,
+				E9F97869D0D3279771E5950E /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				59D1C6B225B1E1E5E8D414CC /* PBXTargetDependency */,
+			);
+			name = Dawnus;
+			packageProductDependencies = (
+			);
+			productName = Dawnus;
+			productReference = 714D8EDBCC8E2E08488CC669 /* Dawnus.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		21EE58CDA7DC33B1D5D7675E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 2600;
+				TargetAttributes = {
+					BB2B44BAB8281037309941E7 = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+					C6056E099FD5814C0F45BEF0 = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 1AF0DFFE097D11B537F395B9 /* Build configuration list for PBXProject "Dawnus" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = C1E639D21E038AFC496BEDB2;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 46D56A6459546D9FBBF1AA72 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C6056E099FD5814C0F45BEF0 /* Dawnus */,
+				BB2B44BAB8281037309941E7 /* DawnusWidget */,
+				A2EFE93AEB821C1148647CB1 /* DawnusTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		392A50FD2763C812E8311EBB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBDF0F64B50C2A8B475BDA2D /* DawnusBrainTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6344C9A69C13531AFC82B7FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30E36EA13D75359398D9DDA5 /* DawnusLiveActivity.swift in Sources */,
+				4D709EE0BA3E3633F430918A /* DawnusMetadata.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C1E15D4F57DD60701EF30C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9516CF86CC1A638D966A92D1 /* AlarmEditorView.swift in Sources */,
+				EE612BEF1DA4CB5FD68B4C3E /* AlarmEngine.swift in Sources */,
+				A8D8E7D78091F81406754C9D /* AlarmListView.swift in Sources */,
+				59311AEC9931F7F1DCB35247 /* AlarmStore.swift in Sources */,
+				89D477D8A1D91ADE8897785B /* DawnusAlarm.swift in Sources */,
+				F109DF5DED7CF15D0FC400E0 /* DawnusApp.swift in Sources */,
+				DD5137C521875C462FDF24F0 /* DawnusIntents.swift in Sources */,
+				486FE05D21031424FAD7365E /* DawnusMetadata.swift in Sources */,
+				156AEAEC1B31755B34A53F42 /* DialPicker.swift in Sources */,
+				71A39CF6B16CD754CEDCD787 /* EngineView.swift in Sources */,
+				42E456D560A3E75A75D4D96C /* Glass.swift in Sources */,
+				0892A0B772FF6179B17FAF4B /* Notifications.swift in Sources */,
+				D7E465409C125DE010ECE0F5 /* RingingView.swift in Sources */,
+				6EF0359FB08E2DEF911F6294 /* RitualView.swift in Sources */,
+				524FD4D4E1C0B0BE53D5BFC4 /* RootView.swift in Sources */,
+				E1B3B902BF26764F50167BE6 /* SharedStore.swift in Sources */,
+				337CCF2A8C7CDA2B4AC700FF /* StatsView.swift in Sources */,
+				323A71E84F502418AC0721E6 /* Theme.swift in Sources */,
+				2AC35AC8726109AD3430F678 /* WakeBrain.swift in Sources */,
+				32B5172E8557040DC5FB4E32 /* WakeSound.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		59D1C6B225B1E1E5E8D414CC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BB2B44BAB8281037309941E7 /* DawnusWidget */;
+			targetProxy = B8E24FF9EE4C58678D789A17 /* PBXContainerItemProxy */;
+		};
+		F7D47283EE974338924223BB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C6056E099FD5814C0F45BEF0 /* Dawnus */;
+			targetProxy = A493BEBCF8DD88B74C610485 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		6054A24954D2E94495126ADF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CODE_SIGN_ENTITLEMENTS = Dawnus/Dawnus.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = Dawnus/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dawnus.app;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		76B7595D69135083E70174D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CODE_SIGN_ENTITLEMENTS = DawnusWidget/DawnusWidget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DawnusWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dawnus.app.DawnusWidget;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		851141A9E346935E293333FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_STRICT_CONCURRENCY = minimal;
+				SWIFT_VERSION = 6;
+			};
+			name = Release;
+		};
+		A6269BFAFEE8E45E4FDB7AD4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dawnus.app.tests;
+				SDKROOT = iphoneos;
+				SWIFT_STRICT_CONCURRENCY = minimal;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dawnus.app/Dawnus";
+			};
+			name = Debug;
+		};
+		B20B4DC208AEC5CAFCC88462 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dawnus.app.tests;
+				SDKROOT = iphoneos;
+				SWIFT_STRICT_CONCURRENCY = minimal;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dawnus.app/Dawnus";
+			};
+			name = Release;
+		};
+		CE222AC8C1970E8D0F79C268 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_STRICT_CONCURRENCY = minimal;
+				SWIFT_VERSION = 6;
+			};
+			name = Debug;
+		};
+		E34140BB274568105CFC0E92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CODE_SIGN_ENTITLEMENTS = Dawnus/Dawnus.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = Dawnus/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dawnus.app;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FAC7813D6F18752817463979 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CODE_SIGN_ENTITLEMENTS = DawnusWidget/DawnusWidget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DawnusWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dawnus.app.DawnusWidget;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1AF0DFFE097D11B537F395B9 /* Build configuration list for PBXProject "Dawnus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE222AC8C1970E8D0F79C268 /* Debug */,
+				851141A9E346935E293333FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		4A7D8F0BCCEEC58A77F62A21 /* Build configuration list for PBXNativeTarget "Dawnus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6054A24954D2E94495126ADF /* Debug */,
+				E34140BB274568105CFC0E92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		5522A9A4A7CE0730529AF300 /* Build configuration list for PBXNativeTarget "DawnusWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76B7595D69135083E70174D3 /* Debug */,
+				FAC7813D6F18752817463979 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		59FA000C7F7654A6FE2D0309 /* Build configuration list for PBXNativeTarget "DawnusTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6269BFAFEE8E45E4FDB7AD4 /* Debug */,
+				B20B4DC208AEC5CAFCC88462 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 21EE58CDA7DC33B1D5D7675E /* Project object */;
+}

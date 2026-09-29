@@ -1,0 +1,29 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Xcode 用户数据（含本地断点、签名选择、窗口布局）
+xcuserdata/
+*.xcuserstate
+*.xcuserdatad
+*.xccheckout
+*.xcscmblueprint
+
+# 构建产物
+build/
+DerivedData/
+*.build/
+*.app/
+*.dSYM.zip
+
+# 归档 / 打包
+*.ipa
+*.xcarchive
+*.zip
+
+# 包管理器
+Pods/
+.tuist/
+Carthage/Build/

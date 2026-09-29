@@ -1,0 +1,144 @@
+name: Dawnus
+options:
+  bundleIdPrefix: com.dawnus
+  deploymentTarget:
+    iOS: "26.0"
+  groupSortPosition: none
+  xcodeVersion: "26.0"
+settings:
+  base:
+    SWIFT_VERSION: "6"
+    # AlarmKit 的 AlarmManager 与 alarmUpdates 异步序列尚未完全标注 Sendable，
+    # 在 strict 模式下会误报数据竞争。整个 App 逻辑都跑在 MainActor 上，降到 minimal 是安全的。
+    SWIFT_STRICT_CONCURRENCY: minimal
+    SWIFT_EMIT_LOC_STRINGS: YES
+    ENABLE_PREVIEWS: YES
+    ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS: YES
+    GENERATE_INFOPLIST_FILE: YES
+    MARKETING_VERSION: "1.0"
+    CURRENT_PROJECT_VERSION: "1"
+    ENABLE_USER_SCRIPT_SANDBOXING: NO
+    CLANG_ENABLE_MODULES: YES
+  configs:
+    debug:
+      SWIFT_ACTIVE_COMPILATION_CONDITIONS: DEBUG
+      SWIFT_OPTIMIZATION_LEVEL: "-Onone"
+
+targets:
+  Dawnus:
+    type: application
+    platform: iOS
+    sources:
+      - path: Dawnus
+        excludes:
+          - "Resources/**"
+    resources:
+      - path: Dawnus/Resources/dawn.caf
+      - path: Dawnus/Resources/Assets.xcassets
+    info:
+      path: Dawnus/Info.plist
+      properties:
+        CFBundleDisplayName: "拂晓"
+        CFBundleName: "Dawnus"
+        UILaunchScreen:
+          UIColorName: "DawnusBg"
+        NSAlarmKitUsageDescription: "拂晓需要系统闹钟权限，才能在你设定的时间准时把你叫醒。"
+        NSSupportsLiveActivities: true
+        NSUserActivityTypes: []
+        UIApplicationSceneManifest:
+          UIApplicationSupportsMultipleScenes: false
+        UIRequiredDeviceCapabilities:
+          - arm64
+        UIBackgroundModes: []
+        ITSAppUsesNonExemptEncryption: false
+        NSFaceIDUsageDescription: "解锁「硬核」难度的闹钟需要验证身份。"
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+    entitlements:
+      path: Dawnus/Dawnus.entitlements
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.dawnus.app
+        # 由 scripts/install-device.sh 写入；留空时可在 Xcode 的 Signing 面板手动选 Team
+        DEVELOPMENT_TEAM: ""
+        CODE_SIGN_STYLE: Automatic
+        TARGETED_DEVICE_FAMILY: "1,2"
+        DEVELOPMENT_ASSET_PATHS: ""
+        INFOPLIST_KEY_UIApplicationSceneManifest_Generation: YES
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS: YES
+    dependencies:
+      - sdk: AlarmKit.framework
+      - sdk: ActivityKit.framework
+      - sdk: AppIntents.framework
+      - sdk: SwiftUI.framework
+      - sdk: Charts.framework
+      - sdk: WidgetKit.framework
+      - sdk: AVFoundation.framework
+      - target: DawnusWidget
+
+  DawnusWidget:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: DawnusWidget
+        excludes:
+          - "Shared/**"
+      - path: Dawnus/Model/DawnusMetadata.swift
+    info:
+      path: DawnusWidget/Info.plist
+      properties:
+        CFBundleDisplayName: "拂晓 实时活动"
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.widgetkit-extension
+        NSSupportsLiveActivities: true
+    entitlements:
+      path: DawnusWidget/DawnusWidget.entitlements
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.dawnus.app.DawnusWidget
+        DEVELOPMENT_TEAM: ""
+        CODE_SIGN_STYLE: Automatic
+        SKIP_INSTALL: YES
+        GENERATE_INFOPLIST_FILE: YES
+        ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS: YES
+    dependencies:
+      - sdk: AlarmKit.framework
+      - sdk: ActivityKit.framework
+      - sdk: SwiftUI.framework
+      - sdk: WidgetKit.framework
+      - sdk: AppIntents.framework
+
+  DawnusTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - path: DawnusTests
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.dawnus.app.tests
+        GENERATE_INFOPLIST_FILE: YES
+        SWIFT_STRICT_CONCURRENCY: minimal
+    dependencies:
+      - target: Dawnus
+
+schemes:
+  Dawnus:
+    build:
+      targets:
+        Dawnus: all
+        DawnusWidget: all
+        DawnusTests: [test]
+    run:
+      config: Debug
+    test:
+      config: Debug
+      gatherCoverageData: true
+      targets:
+        - DawnusTests
+    profile:
+      config: Release
+    analyze:
+      config: Debug
+    archive:
+      config: Release

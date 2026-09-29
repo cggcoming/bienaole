@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+<!-- 默认为空：这样用「免费个人 Apple ID」也能真机调试。
+     App Groups 属于受限 capability，个人团队（Personal Team）无法签发，
+     留着会直接导致签名失败：Provisioning profile doesn't include the
+     com.apple.security.application-groups entitlement。
+
+     代码已做降级（见 Store/SharedStore.swift）：没有 App Group 时自动改用
+     进程内 UserDefaults，功能不受影响。
+
+     若你有付费开发者账号并想启用真正的跨进程共享，把本文件换成同目录下的
+     Dawnus.withAppGroup.entitlements（脚本 scripts/install-device.sh 会自动做这件事）。 -->
+</dict>
+</plist>
